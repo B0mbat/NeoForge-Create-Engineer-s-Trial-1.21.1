@@ -45,7 +45,8 @@ logoFile="icon.png"
 
 # The description text for the mod (multi line!) (#mandatory)
 description='''
-Example mod description.
+This Create-Addon adds new custom Recipes, new reworked recipes, new custom items/blocks/fluids, to make the Create-Expirients more complicate for
+technically specialized players. It also solves the unsolved Mystery of the not existend Tuff-Recipe! Have Fun and thanks for playing! <3
 '''
 
 # The [[mixins]] block allows you to declare your mixin config to FML so that it gets loaded.
