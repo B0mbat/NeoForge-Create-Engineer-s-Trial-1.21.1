@@ -16,6 +16,9 @@ public class ModItems {
     public static final DeferredItem<Item> GREEN_ELECTRON_TUBE =
             ITEMS.register("green_electron_tube",
                     () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> BLUE_ELECTRON_TUBE =
+            ITEMS.register("blue_electron_tube",
+                    () -> new Item(new Item.Properties()));
 
 
 
