@@ -15,6 +15,10 @@ public class ModItems {
             ITEMS.register("empty_super_glue",
                     () -> new Item(new Item.Properties()));
 
+    public static final DeferredItem<Item> EMPTY_ELECTRON_TUBE =
+            ITEMS.register("empty_electron_tube",
+                    () -> new Item(new Item.Properties()));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
