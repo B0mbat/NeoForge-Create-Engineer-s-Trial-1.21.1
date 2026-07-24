@@ -22,6 +22,13 @@ public class ModItems {
     public static final DeferredItem<Item> BROWN_PAPER =
             ITEMS.register("brown_paper",
                     () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> IRON_SCREW =
+            ITEMS.register("iron_screw",
+                    () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item>  DESTROYED_PRECISION_MECHANISM =
+            ITEMS.register("destroyed_precision_mechanism",
+                    () -> new Item(new Item.Properties()));
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
