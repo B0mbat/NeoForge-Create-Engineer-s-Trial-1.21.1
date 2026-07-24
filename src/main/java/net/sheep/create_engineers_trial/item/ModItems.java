@@ -19,6 +19,21 @@ public class ModItems {
     public static final DeferredItem<Item> BLUE_ELECTRON_TUBE =
             ITEMS.register("blue_electron_tube",
                     () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> MATERIAL_SCRAP =
+            ITEMS.register("material_scrap",
+                    () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> CLIPBOARD_WITHOUT_PAPER =
+            ITEMS.register("clipboard_without_paper",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> COPPER_COIL =
+            ITEMS.register("copper_coil",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> HALF_BROWN_PAPER =
+            ITEMS.register("half_brown_paper",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> INCOMPLETE_UPGRADE_TEMPLATE =
+            ITEMS.register("incomplete_upgrade_template",
+            () -> new Item(new Item.Properties()));
 
 
 

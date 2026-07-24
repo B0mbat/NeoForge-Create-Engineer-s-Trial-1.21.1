@@ -6,6 +6,11 @@
   "item.create_engineers_trial.brown_paper": "Brown Paper",
   "item.create_engineers_trial.iron_screw": "Iron Screw",
   "item.create_engineers_trial.destroyed_precision_mechanism": "Destroyed Precision Mechanism",
+  "item.create_engineers_trial.material_scrap": "Material Scrap",
+  "item.create_engineers_trial.clipboard_without_paper": "Clipboard Without Paper",
+  "item.create_engineers_trial.copper_coil": "Copper Coil",
+  "item.create_engineers_trial.half_brown_paper": "Half Brown Paper",
+  "item.create_engineers_trial.incomplete_upgrade_template": "Incomplete Smithing Template",
 
   "creativetab.create_engineers_trial.items": "Create: Engineer´s Trial"
 }

@@ -27,7 +27,12 @@ public class ModCreativeModeTabs {
                                 output.accept(ModItems.EMPTY_SUPER_GLUE.get());
                                 output.accept(ModItems.DESTROYED_PRECISION_MECHANISM.get());
                                 output.accept(ModItems.BROWN_PAPER.get());
+                                output.accept(ModItems.HALF_BROWN_PAPER.get());
+                                output.accept(ModItems.CLIPBOARD_WITHOUT_PAPER.get());
                                 output.accept(ModItems.IRON_SCREW.get());
+                                output.accept(ModItems.MATERIAL_SCRAP.get());
+                                output.accept(ModItems.COPPER_COIL.get());
+                                output.accept(ModItems.INCOMPLETE_UPGRADE_TEMPLATE.get());
                             })
                             .build());
 
