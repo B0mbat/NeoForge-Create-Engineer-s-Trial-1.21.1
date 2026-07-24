@@ -45,8 +45,9 @@ logoFile="icon.png"
 
 # The description text for the mod (multi line!) (#mandatory)
 description='''
-This Create-Addon adds new custom recipes, new reworked recipes from the official create mod, new custom items, blocks and fluids, to make the Create-Expirience more complicated for
-technically specialized players. It also solves the unsolved mystery of the non-existing tuff-recipe! Have fun AND thanks for playing! <3
+This Create addon is designed specifically for technical players who want a more complex, challenging automation experience. It introduces a complete progression overhaul by adding new custom recipes, reworking the official Create recipes, and introducing new custom items, blocks, and fluids.
+It also solves the unsolved mystery of the non-existing tuff-recipe!
+Have fun AND thanks for playing! <3
 '''
 
 # The [[mixins]] block allows you to declare your mixin config to FML so that it gets loaded.
