@@ -42,9 +42,9 @@ public class CreateEngineersTrial {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
             event.accept(ModItems.EMPTY_SUPER_GLUE);
-
             event.accept(ModItems.EMPTY_ELECTRON_TUBE);
             event.accept(ModItems.GREEN_ELECTRON_TUBE);
+            event.accept(ModItems.BROWN_PAPER);
         }
     }
 
