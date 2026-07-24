@@ -1,14 +1,11 @@
 {
   "item.create_engineers_trial.empty_super_glue": "Empty Super Glue",
-
   "item.create_engineers_trial.empty_electron_tube": "Empty Electron Tube",
-
   "item.create_engineers_trial.green_electron_tube": "Green Electron Tube",
-
   "item.create_engineers_trial.blue_electron_tube": "Blue Electron Tube",
-  "item.create_engineers_trial.empty_electron_tube": "Empty Electron Tube",
-  "item.create_engineers_trial.green_electron_tube": "Green Electron Tube",
   "item.create_engineers_trial.brown_paper": "Brown Paper",
   "item.create_engineers_trial.iron_screw": "Iron Screw",
-  "item.create_engineers_trial.destroyed_precision_mechanism": "Destroyed Precision_mechanism"
+  "item.create_engineers_trial.destroyed_precision_mechanism": "Destroyed Precision Mechanism",
+
+  "creativetab.create_engineers_trial.items": "Create: Engineer´s Trial"
 }
