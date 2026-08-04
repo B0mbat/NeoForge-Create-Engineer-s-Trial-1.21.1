@@ -2,7 +2,9 @@ package net.sheep.create_engineers_trial.fluid;
 
 import net.sheep.create_engineers_trial.CreateEngineersTrial;
 import net.minecraft.resources.ResourceLocation;
-import net.neoforged.bus.api.IEventBus;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.world.level.pathfinder.PathType;
+import net.neoforged.neoforge.common.SoundActions;
 import net.neoforged.neoforge.fluids.FluidType;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.NeoForgeRegistries;
@@ -11,23 +13,23 @@ import org.joml.Vector3f;
 import java.util.function.Supplier;
 
 public class ModFluidTypes {
-    public static final ResourceLocation MOLTEN_PLASTIC_STILL_RL = ResourceLocation.fromNamespaceAndPath(CreateEngineersTrial.MOD_ID, "block/molten_plastic_still");
-    public static final ResourceLocation MOLTEN_PLASTIC_FLOWING_RL = ResourceLocation.fromNamespaceAndPath(CreateEngineersTrial.MOD_ID, "block/molten_plastic_flow");
-    public static final ResourceLocation WATER_OVERLAY_RL = ResourceLocation.withDefaultNamespace("block/water_overlay");
-
     public static final DeferredRegister<FluidType> FLUID_TYPES =
-            DeferredRegister.create(NeoForgeRegistries.Keys.FLUID_TYPES, CreateEngineersTrial.MOD_ID);
+            DeferredRegister.create(NeoForgeRegistries.FLUID_TYPES, CreateEngineersTrial.MOD_ID);
 
-    public static final Supplier<FluidType> MOLTEN_PLASTIC_FLUID_TYPE = registerFluidType("molten_plastic_fluid",
-            new BaseFluidType(MOLTEN_PLASTIC_STILL_RL, MOLTEN_PLASTIC_FLOWING_RL, WATER_OVERLAY_RL, 0xA1343E69,
-                    new Vector3f(108f / 255f, 168f / 255f, 212f / 255f),
-                    FluidType.Properties.create()));
-
-    private static Supplier<FluidType> registerFluidType(String name, FluidType fluidType) {
-        return FLUID_TYPES.register(name, () -> fluidType);
-    }
-
-    public static void register(IEventBus eventBus) {
-        FLUID_TYPES.register(eventBus);
-    }
+    public static final Supplier<FluidType> MOLTEN_PLASTIC_FLUID_TYPE = FLUID_TYPES.register("molten_plastic_fluid",
+            () -> new BaseFluidType(
+                    FluidType.Properties.create()
+                            .density(1500)
+                            .viscosity(3500)
+                            .pathType(PathType.LAVA)
+                            .adjacentPathType(null)
+                            .sound(SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL_LAVA)
+                            .sound(SoundActions.BUCKET_EMPTY, SoundEvents.BUCKET_EMPTY_LAVA),
+                    ResourceLocation.fromNamespaceAndPath(CreateEngineersTrial.MOD_ID, "block/molten_plastic_still"),
+                    ResourceLocation.fromNamespaceAndPath(CreateEngineersTrial.MOD_ID, "block/molten_plastic_flow"),
+                    ResourceLocation.fromNamespaceAndPath(CreateEngineersTrial.MOD_ID, "block/molten_plastic_overlay"),
+                    0xFFFFFFFF,
+                    new Vector3f(224f / 255f, 56f / 255f, 208f / 255f)
+            )
+    );
 }
