@@ -11,19 +11,17 @@ import org.joml.Vector3f;
 import java.util.function.Supplier;
 
 public class ModFluidTypes {
-    public static final ResourceLocation WATER_STILL_RL = ResourceLocation.parse("block/molten_plastic_still");
-    public static final ResourceLocation WATER_FLOWING_RL = ResourceLocation.parse("block/molten_plastic_flow");
-    public static final ResourceLocation WATER_OVERLAY_RL = ResourceLocation.parse("block/water_overlay");
+    public static final ResourceLocation MOLTEN_PLASTIC_STILL_RL = ResourceLocation.fromNamespaceAndPath(CreateEngineersTrial.MOD_ID, "block/molten_plastic_still");
+    public static final ResourceLocation MOLTEN_PLASTIC_FLOWING_RL = ResourceLocation.fromNamespaceAndPath(CreateEngineersTrial.MOD_ID, "block/molten_plastic_flow");
+    public static final ResourceLocation WATER_OVERLAY_RL = ResourceLocation.withDefaultNamespace("block/water_overlay");
 
     public static final DeferredRegister<FluidType> FLUID_TYPES =
             DeferredRegister.create(NeoForgeRegistries.Keys.FLUID_TYPES, CreateEngineersTrial.MOD_ID);
 
     public static final Supplier<FluidType> MOLTEN_PLASTIC_FLUID_TYPE = registerFluidType("molten_plastic_fluid",
-            new BaseFluidType(WATER_STILL_RL, WATER_FLOWING_RL, WATER_OVERLAY_RL, 0xA1343E69,
+            new BaseFluidType(MOLTEN_PLASTIC_STILL_RL, MOLTEN_PLASTIC_FLOWING_RL, WATER_OVERLAY_RL, 0xA1343E69,
                     new Vector3f(108f / 255f, 168f / 255f, 212f / 255f),
                     FluidType.Properties.create()));
-
-
 
     private static Supplier<FluidType> registerFluidType(String name, FluidType fluidType) {
         return FLUID_TYPES.register(name, () -> fluidType);

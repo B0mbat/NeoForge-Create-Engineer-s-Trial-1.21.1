@@ -1,6 +1,5 @@
 package net.sheep.create_engineers_trial.fluid;
 
-
 import com.mojang.blaze3d.shaders.FogShape;
 import com.mojang.blaze3d.systems.RenderSystem;
 import net.minecraft.client.Camera;
@@ -13,13 +12,8 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import org.joml.Vector3f;
 
-/**
- * Basic implementation of {@link FluidType} that supports specifying still and flowing textures in the constructor.
- *
- * @author Choonster (<a href="https://github.com/Choonster-Minecraft-Mods/TestMod3/blob/1.19.x/LICENSE.txt">MIT License</a>)
- * Change by: Kaupenjoe
- * Added overlayTexture and tintColor as well. Also converts tint color into fog color
- */
+import java.util.function.Consumer;
+
 public class BaseFluidType extends FluidType {
     private final ResourceLocation stillTexture;
     private final ResourceLocation flowingTexture;
@@ -37,8 +31,9 @@ public class BaseFluidType extends FluidType {
         this.fogColor = fogColor;
     }
 
-    public IClientFluidTypeExtensions getClientFluidTypeExtensions() {
-        return new IClientFluidTypeExtensions() {
+    @Override
+    public void initializeClient(Consumer<IClientFluidTypeExtensions> consumer) {
+        consumer.accept(new IClientFluidTypeExtensions() {
             @Override
             public ResourceLocation getStillTexture() {
                 return stillTexture;
@@ -69,8 +64,8 @@ public class BaseFluidType extends FluidType {
             public void modifyFogRender(Camera camera, FogRenderer.FogMode mode, float renderDistance, float partialTick,
                                         float nearDistance, float farDistance, FogShape shape) {
                 RenderSystem.setShaderFogStart(1f);
-                RenderSystem.setShaderFogEnd(6f); // distance when the fog starts
+                RenderSystem.setShaderFogEnd(6f);
             }
-        };
+        });
     }
 }
