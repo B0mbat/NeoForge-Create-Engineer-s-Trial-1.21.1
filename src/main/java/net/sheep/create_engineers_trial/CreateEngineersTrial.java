@@ -11,6 +11,9 @@ import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
+import net.sheep.create_engineers_trial.block.ModBlocks;
+import net.sheep.create_engineers_trial.fluid.ModFluidTypes;
+import net.sheep.create_engineers_trial.fluid.ModFluids;
 import net.sheep.create_engineers_trial.item.ModCreativeModeTabs;
 import net.sheep.create_engineers_trial.item.ModItems;
 import org.slf4j.Logger;
@@ -30,6 +33,11 @@ public class CreateEngineersTrial {
 
         // HIER MUSS DIE ITEM-REGISTRIERUNG HIN
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
+
+        ModFluidTypes.register(modEventBus);
+        ModFluids.register(modEventBus);
+
         // ODER:
         // ModItems.ITEMS.register(modEventBus);
 
