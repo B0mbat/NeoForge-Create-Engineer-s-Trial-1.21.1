@@ -19,8 +19,8 @@ public class ModFluidTypes {
     public static final Supplier<FluidType> MOLTEN_PLASTIC_FLUID_TYPE = FLUID_TYPES.register("molten_plastic_fluid",
             () -> new BaseFluidType(
                     FluidType.Properties.create()
-                            .density(1500)
-                            .viscosity(3500)
+                            .density(2500)
+                            .viscosity(10500)
                             .pathType(PathType.LAVA)
                             .adjacentPathType(null)
                             .sound(SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL_LAVA)
@@ -28,8 +28,8 @@ public class ModFluidTypes {
                     ResourceLocation.fromNamespaceAndPath(CreateEngineersTrial.MOD_ID, "block/molten_plastic_still"),
                     ResourceLocation.fromNamespaceAndPath(CreateEngineersTrial.MOD_ID, "block/molten_plastic_flow"),
                     ResourceLocation.fromNamespaceAndPath(CreateEngineersTrial.MOD_ID, "block/molten_plastic_overlay"),
-                    0xFFFFFFFF,
-                    new Vector3f(224f / 255f, 56f / 255f, 208f / 255f)
+                    0xDDFFFFFF,
+                    new Vector3f(0.9f, 0.9f, 0.9f)
             )
     );
 }
