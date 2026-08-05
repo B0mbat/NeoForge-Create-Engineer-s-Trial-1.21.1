@@ -14,5 +14,8 @@
 
   "creativetab.create_engineers_trial.items": "Create: Engineer´s Trial",
 
-  "item.create_engineers_trial.molten_plastic_bucket": "Molten Plastic Bucket"
+  "item.create_engineers_trial.molten_plastic_bucket": "Molten Plastic Bucket",
+  "block.create_engineers_trial.molten_plastic_block": "Molten Plastic",
+  "fluid_type.create_engineers_trial.molten_plastic_fluid": "Molten Plastic"
+
 }
