@@ -1,0 +1,35 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "item": "minecraft:charcoal"
+    },
+    {
+      "amount": 500,
+      "fluid": "create:honey"
+    },
+    {
+      "amount": 250,
+      "fluid": "minecraft:water"
+    },
+    {
+      "item": "minecraft:dried_kelp"
+    },
+    {
+      "item": "minecraft:dried_kelp"
+    },
+    {
+      "item": "minecraft:slime_ball"
+    },
+    {
+      "item": "create:tree_fertilizer"
+    }
+  ],
+  "results": [
+    {
+      "amount": 1000,
+      "id": "create_engineers_trial:source_molten_plastic"
+    }
+  ]
+}
