@@ -1,0 +1,21 @@
+{
+  "item.create_engineers_trial.empty_super_glue": "Leerer Sekundenkleber",
+  "item.create_engineers_trial.empty_electron_tube": "Leere Elektronenröhre",
+  "item.create_engineers_trial.green_electron_tube": "Grüne Elektronenröhre",
+  "item.create_engineers_trial.blue_electron_tube": "Blaue Elektronenröhre",
+  "item.create_engineers_trial.brown_paper": "Braunes Papier",
+  "item.create_engineers_trial.iron_screw": "Eisen Schraube",
+  "item.create_engineers_trial.destroyed_precision_mechanism": "Zerstörtes Präzisionsgetriebe",
+  "item.create_engineers_trial.material_scrap": "Material Schrott",
+  "item.create_engineers_trial.clipboard_without_paper": "Klemmbrett Ohne Papier",
+  "item.create_engineers_trial.copper_coil": "Kupferspule",
+  "item.create_engineers_trial.half_brown_paper": "Halbes Braunes Papier",
+  "item.create_engineers_trial.incomplete_upgrade_template": "Unfertige Schmiedevorlage",
+
+  "creativetab.create_engineers_trial.items": "Create: Engineer´s Trial",
+
+  "item.create_engineers_trial.molten_plastic_bucket": "Geschmolzenesplastikeimer",
+  "block.create_engineers_trial.molten_plastic_block": "Geschmolzenes Plastik",
+  "fluid_type.create_engineers_trial.molten_plastic_fluid": "Geschmolzenes Plastik"
+
+}
