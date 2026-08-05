@@ -24,14 +24,6 @@ import org.joml.Vector3f;
 public class ModClientEvents {
 
     @SubscribeEvent
-    public static void onClientSetup(FMLClientSetupEvent event) {
-        event.enqueueWork(() -> {
-            ItemBlockRenderTypes.setRenderLayer(ModFluids.SOURCE_MOLTEN_PLASTIC.get(), RenderType.translucent());
-            ItemBlockRenderTypes.setRenderLayer(ModFluids.FLOWING_MOLTEN_PLASTIC.get(), RenderType.translucent());
-        });
-    }
-
-    @SubscribeEvent
     public static void registerClientExtensions(RegisterClientExtensionsEvent event) {
         BaseFluidType fluidType = (BaseFluidType) ModFluidTypes.MOLTEN_PLASTIC_FLUID_TYPE.get();
 
@@ -63,8 +55,8 @@ public class ModClientEvents {
 
             @Override
             public void modifyFogRender(Camera camera, FogRenderer.FogMode mode, float renderDistance, float partialTick, float nearDistance, float farDistance, FogShape shape) {
-                RenderSystem.setShaderFogStart(1f);
-                RenderSystem.setShaderFogEnd(6f);
+                RenderSystem.setShaderFogStart(0.0f);
+                RenderSystem.setShaderFogEnd(0.75f);
             }
         }, ModFluidTypes.MOLTEN_PLASTIC_FLUID_TYPE.get());
     }
