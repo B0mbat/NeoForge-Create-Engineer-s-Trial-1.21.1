@@ -40,7 +40,7 @@ public class ModFluids {
             () -> new BaseFlowingFluid.Flowing(ModFluids.MOLTEN_PLASTIC_PROPERTIES));
 
     public static final DeferredBlock<LiquidBlock> MOLTEN_PLASTIC_BLOCK = ModBlocks.BLOCKS.register("molten_plastic_block",
-            () -> new LiquidBlock(ModFluids.SOURCE_MOLTEN_PLASTIC.get(), BlockBehaviour.Properties.ofFullCopy(Blocks.WATER).noLootTable()));
+            () -> new LiquidBlock(ModFluids.SOURCE_MOLTEN_PLASTIC.get(), BlockBehaviour.Properties.ofFullCopy(Blocks.WATER).noLootTable().noOcclusion()));
 
     public static final DeferredItem<Item> MOLTEN_PLASTIC_BUCKET = ModItems.ITEMS.registerItem("molten_plastic_bucket",
             properties -> new BucketItem(ModFluids.SOURCE_MOLTEN_PLASTIC.get(), properties.craftRemainder(Items.BUCKET).stacksTo(1)));

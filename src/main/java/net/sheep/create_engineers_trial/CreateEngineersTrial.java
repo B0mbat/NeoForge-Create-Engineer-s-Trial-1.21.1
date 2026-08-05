@@ -25,24 +25,17 @@ public class CreateEngineersTrial {
     public static final Logger LOGGER = LogUtils.getLogger();
 
     public CreateEngineersTrial(IEventBus modEventBus, ModContainer modContainer) {
-
         modEventBus.addListener(this::commonSetup);
         modEventBus.addListener(this::addCreative);
 
         ModCreativeModeTabs.register(modEventBus);
-
-        // HIER MUSS DIE ITEM-REGISTRIERUNG HIN
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
-        ModFluidTypes.register(modEventBus);
-        ModFluids.register(modEventBus);
-
-        // ODER:
-        // ModItems.ITEMS.register(modEventBus);
+        ModFluidTypes.FLUID_TYPES.register(modEventBus);
+        ModFluids.FLUIDS.register(modEventBus);
 
         NeoForge.EVENT_BUS.register(this);
-
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
 
