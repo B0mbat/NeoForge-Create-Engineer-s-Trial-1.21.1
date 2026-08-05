@@ -34,10 +34,6 @@ public class ModItems {
     public static final DeferredItem<Item> INCOMPLETE_UPGRADE_TEMPLATE =
             ITEMS.register("incomplete_upgrade_template",
             () -> new Item(new Item.Properties()));
-
-
-
-
     public static final DeferredItem<Item> EMPTY_ELECTRON_TUBE =
             ITEMS.register("empty_electron_tube",
                     () -> new Item(new Item.Properties()));
@@ -49,6 +45,15 @@ public class ModItems {
                     () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item>  DESTROYED_PRECISION_MECHANISM =
             ITEMS.register("destroyed_precision_mechanism",
+                    () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item>  PLASTIC_SHEET =
+            ITEMS.register("plastic_sheet",
+                    () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item>  IRON_NOZZLE =
+            ITEMS.register("iron_nozzle",
+                    () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item>  LIME_PLASTIC_SHEET =
+            ITEMS.register("lime_plastic_sheet",
                     () -> new Item(new Item.Properties()));
 
 

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:iron_nugget"
+    },
+    "B": {
+      "item": "create:iron_sheet"
+    },
+    "C": {
+      "item": "create_engineers_trial:plastic_sheet"
+    }
+  },
+  "pattern": [
+    "BC",
+    "AB"
+  ],
+  "result": {
+    "count": 1,
+    "id": "create_engineers_trial:iron_nozzle"
+  }
+}

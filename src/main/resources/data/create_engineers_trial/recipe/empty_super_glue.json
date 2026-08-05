@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "create_engineers_trial:iron_nozzle"
+    },
+    "B": {
+      "item": "create_engineers_trial:lime_plastic_sheet"
+    },
+    "C": {
+      "item": "create:iron_sheet"
+    }
+  },
+  "pattern": [
+    "BC",
+    "AB"
+  ],
+  "result": {
+    "count": 1,
+    "id": "create_engineers_trial:empty_super_glue"
+  }
+}

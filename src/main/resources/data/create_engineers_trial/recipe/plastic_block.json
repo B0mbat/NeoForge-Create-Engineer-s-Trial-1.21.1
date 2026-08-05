@@ -1,0 +1,15 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "type": "neoforge:single",
+      "amount": 1000,
+      "fluid": "create_engineers_trial:source_molten_plastic"
+    }
+  ],
+  "results": [
+    {
+      "id": "create_engineers_trial:plastic_block"
+    }
+  ]
+}

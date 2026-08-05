@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "create_engineers_trial:plastic_block"
+    }
+  ],
+  "results": [
+    {
+      "id": "create_engineers_trial:plastic_sheet"
+    }
+  ]
+}

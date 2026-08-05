@@ -11,11 +11,17 @@
   "item.create_engineers_trial.copper_coil": "Kupferspule",
   "item.create_engineers_trial.half_brown_paper": "Halbes Braunes Papier",
   "item.create_engineers_trial.incomplete_upgrade_template": "Unfertige Schmiedevorlage",
+  "item.create_engineers_trial.plastic_sheet": "Plastik Platte",
+  "item.create_engineers_trial.iron_nozzle": "Eisen Tülle",
+  "item.create_engineers_trial.lime_plastic_sheet": "Hellgrüne Plastik Platte",
+
 
   "creativetab.create_engineers_trial.items": "Create: Engineer´s Trial",
 
   "item.create_engineers_trial.molten_plastic_bucket": "Geschmolzenesplastikeimer",
   "block.create_engineers_trial.molten_plastic_block": "Geschmolzenes Plastik",
-  "fluid_type.create_engineers_trial.molten_plastic_fluid": "Geschmolzenes Plastik"
+  "fluid_type.create_engineers_trial.molten_plastic_fluid": "Geschmolzenes Plastik",
+
+  "block.create_engineers_trial.plastic_block": "Plastik Block"
 
 }

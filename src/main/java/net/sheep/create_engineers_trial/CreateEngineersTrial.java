@@ -26,7 +26,6 @@ public class CreateEngineersTrial {
 
     public CreateEngineersTrial(IEventBus modEventBus, ModContainer modContainer) {
         modEventBus.addListener(this::commonSetup);
-        modEventBus.addListener(this::addCreative);
 
         ModCreativeModeTabs.register(modEventBus);
         ModItems.register(modEventBus);
@@ -43,22 +42,7 @@ public class CreateEngineersTrial {
 
     }
 
-    private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
-            event.accept(ModItems.EMPTY_SUPER_GLUE);
-            event.accept(ModItems.EMPTY_ELECTRON_TUBE);
-            event.accept(ModItems.GREEN_ELECTRON_TUBE);
-            event.accept(ModItems.BLUE_ELECTRON_TUBE);
-            event.accept(ModItems.BROWN_PAPER);
-            event.accept(ModItems.IRON_SCREW);
-            event.accept(ModItems.DESTROYED_PRECISION_MECHANISM);
-            event.accept(ModItems.MATERIAL_SCRAP);
-            event.accept(ModItems.CLIPBOARD_WITHOUT_PAPER);
-            event.accept(ModItems.COPPER_COIL);
-            event.accept(ModItems.HALF_BROWN_PAPER);
-            event.accept(ModItems.INCOMPLETE_UPGRADE_TEMPLATE);
-        }
-    }
+
 
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) {

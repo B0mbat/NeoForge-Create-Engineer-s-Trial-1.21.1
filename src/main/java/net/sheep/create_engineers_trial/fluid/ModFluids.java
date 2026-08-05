@@ -45,6 +45,27 @@ public class ModFluids {
     public static final DeferredItem<Item> MOLTEN_PLASTIC_BUCKET = ModItems.ITEMS.registerItem("molten_plastic_bucket",
             properties -> new BucketItem(ModFluids.SOURCE_MOLTEN_PLASTIC.get(), properties.craftRemainder(Items.BUCKET).stacksTo(1)));
 
+    public static final BaseFlowingFluid.Properties LIQUID_GLUE_PROPERTIES = new BaseFlowingFluid.Properties(
+            ModFluidTypes.LIQUID_GLUE_FLUID_TYPE,
+            () -> ModFluids.SOURCE_LIQUID_GLUE.get(),
+            () -> ModFluids.FLOWING_LIQUID_GLUE.get())
+            .slopeFindDistance(2)
+            .levelDecreasePerBlock(1)
+            .block(() -> ModFluids.LIQUID_GLUE_BLOCK.get())
+            .bucket(() -> ModFluids.LIQUID_GLUE_BUCKET.get());
+
+    public static final Supplier<FlowingFluid> SOURCE_LIQUID_GLUE = FLUIDS.register("source_liquid_glue",
+            () -> new BaseFlowingFluid.Source(ModFluids.LIQUID_GLUE_PROPERTIES));
+
+    public static final Supplier<FlowingFluid> FLOWING_LIQUID_GLUE = FLUIDS.register("flowing_liquid_glue",
+            () -> new BaseFlowingFluid.Flowing(ModFluids.LIQUID_GLUE_PROPERTIES));
+
+    public static final DeferredBlock<LiquidBlock> LIQUID_GLUE_BLOCK = ModBlocks.BLOCKS.register("liquid_glue_block",
+            () -> new LiquidBlock(ModFluids.SOURCE_LIQUID_GLUE.get(), BlockBehaviour.Properties.ofFullCopy(Blocks.WATER).noLootTable().noOcclusion()));
+
+    public static final DeferredItem<Item> LIQUID_GLUE_BUCKET = ModItems.ITEMS.registerItem("liquid_glue_bucket",
+            properties -> new BucketItem(ModFluids.SOURCE_LIQUID_GLUE.get(), properties.craftRemainder(Items.BUCKET).stacksTo(1)));
+
     public static void register(IEventBus eventBus) {
         FLUIDS.register(eventBus);
     }

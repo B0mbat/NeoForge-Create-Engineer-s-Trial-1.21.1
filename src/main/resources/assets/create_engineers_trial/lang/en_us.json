@@ -11,11 +11,18 @@
   "item.create_engineers_trial.copper_coil": "Copper Coil",
   "item.create_engineers_trial.half_brown_paper": "Half Brown Paper",
   "item.create_engineers_trial.incomplete_upgrade_template": "Incomplete Smithing Template",
+  "item.create_engineers_trial.plastic_sheet": "Plastic Sheet",
+  "item.create_engineers_trial.iron_nozzle": "Iron Nozzle",
+  "item.create_engineers_trial.lime_plastic_sheet": "Lime Plastic Sheet",
 
   "creativetab.create_engineers_trial.items": "Create: Engineer´s Trial",
 
   "item.create_engineers_trial.molten_plastic_bucket": "Molten Plastic Bucket",
   "block.create_engineers_trial.molten_plastic_block": "Molten Plastic",
-  "fluid_type.create_engineers_trial.molten_plastic_fluid": "Molten Plastic"
+  "fluid_type.create_engineers_trial.molten_plastic_fluid": "Molten Plastic",
+  "item.create_engineers_trial.liquid_glue_bucket": "Glue Bucket",
+  "block.create_engineers_trial.liquid_glue_block": "Glue",
+  "fluid_type.create_engineers_trial.liquid_glue_fluid": "Glue",
 
+  "block.create_engineers_trial.plastic_block": "Plastic Block"
 }

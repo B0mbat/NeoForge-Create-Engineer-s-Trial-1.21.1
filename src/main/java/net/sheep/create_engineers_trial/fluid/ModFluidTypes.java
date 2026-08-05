@@ -32,4 +32,21 @@ public class ModFluidTypes {
                     new Vector3f(0.9f, 0.9f, 0.9f)
             )
     );
+
+    public static final Supplier<FluidType> LIQUID_GLUE_FLUID_TYPE = FLUID_TYPES.register("liquid_glue_fluid",
+            () -> new BaseFluidType(
+                    FluidType.Properties.create()
+                            .density(2500)
+                            .viscosity(10500)
+                            .pathType(PathType.LAVA)
+                            .adjacentPathType(null)
+                            .sound(SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL_LAVA)
+                            .sound(SoundActions.BUCKET_EMPTY, SoundEvents.BUCKET_EMPTY_LAVA),
+                    ResourceLocation.fromNamespaceAndPath(CreateEngineersTrial.MOD_ID, "block/liquid_glue_still"),
+                    ResourceLocation.fromNamespaceAndPath(CreateEngineersTrial.MOD_ID, "block/liquid_glue_flow"),
+                    ResourceLocation.fromNamespaceAndPath(CreateEngineersTrial.MOD_ID, "block/liquid_glue_overlay"),
+                    0xDDFFFFFF,
+                    new Vector3f(0.9f, 0.9f, 0.9f)
+            )
+    );
 }

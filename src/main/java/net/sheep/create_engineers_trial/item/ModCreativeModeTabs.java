@@ -7,6 +7,7 @@ import net.minecraft.world.item.ItemStack;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.sheep.create_engineers_trial.CreateEngineersTrial;
+import net.sheep.create_engineers_trial.block.ModBlocks;
 import net.sheep.create_engineers_trial.fluid.ModFluids;
 
 import java.util.function.Supplier;
@@ -34,7 +35,14 @@ public class ModCreativeModeTabs {
                                 output.accept(ModItems.MATERIAL_SCRAP.get());
                                 output.accept(ModItems.COPPER_COIL.get());
                                 output.accept(ModItems.INCOMPLETE_UPGRADE_TEMPLATE.get());
+                                output.accept(ModItems.PLASTIC_SHEET.get());
+                                output.accept(ModItems.IRON_NOZZLE.get());
+                                output.accept(ModItems.LIME_PLASTIC_SHEET.get());
+
                                 output.accept(ModFluids.MOLTEN_PLASTIC_BUCKET.get());
+                                output.accept(ModFluids.LIQUID_GLUE_BUCKET.get());
+
+                                output.accept(ModBlocks.PLASTIC_BLOCK.get());
                             })
                             .build());
 
