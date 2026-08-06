@@ -45,8 +45,8 @@ public class ModFluidTypes {
                     ResourceLocation.fromNamespaceAndPath(CreateEngineersTrial.MOD_ID, "block/liquid_glue_still"),
                     ResourceLocation.fromNamespaceAndPath(CreateEngineersTrial.MOD_ID, "block/liquid_glue_flow"),
                     ResourceLocation.fromNamespaceAndPath(CreateEngineersTrial.MOD_ID, "block/liquid_glue_overlay"),
-                    0xDDFFFFFF,
-                    new Vector3f(0.9f, 0.9f, 0.9f)
+                    0xDD60C81C,
+                    new Vector3f(0.376f, 0.784f, 0.110f)
             )
     );
 }

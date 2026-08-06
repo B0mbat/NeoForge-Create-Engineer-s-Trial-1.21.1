@@ -25,8 +25,11 @@ public class ModClientEvents {
 
     @SubscribeEvent
     public static void registerClientExtensions(RegisterClientExtensionsEvent event) {
-        BaseFluidType fluidType = (BaseFluidType) ModFluidTypes.MOLTEN_PLASTIC_FLUID_TYPE.get();
+        registerFluidClientExtensions(event, (BaseFluidType) ModFluidTypes.MOLTEN_PLASTIC_FLUID_TYPE.get());
+        registerFluidClientExtensions(event, (BaseFluidType) ModFluidTypes.LIQUID_GLUE_FLUID_TYPE.get());
+    }
 
+    private static void registerFluidClientExtensions(RegisterClientExtensionsEvent event, BaseFluidType fluidType) {
         event.registerFluidType(new IClientFluidTypeExtensions() {
             @Override
             public ResourceLocation getStillTexture() {
@@ -58,6 +61,6 @@ public class ModClientEvents {
                 RenderSystem.setShaderFogStart(0.0f);
                 RenderSystem.setShaderFogEnd(0.75f);
             }
-        }, ModFluidTypes.MOLTEN_PLASTIC_FLUID_TYPE.get());
+        }, fluidType);
     }
 }
