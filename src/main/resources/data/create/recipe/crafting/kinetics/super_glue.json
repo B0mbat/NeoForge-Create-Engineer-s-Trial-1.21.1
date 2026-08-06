@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:crafting_shapeless",
+  "type": "create:mixing",
   "ingredients": [
     {
       "item": "create_engineers_trial:empty_super_glue"
@@ -7,7 +7,7 @@
     {
       "type": "neoforge:single",
       "amount": 250,
-      "fluid": "create_engineers_trial:liquid_glue"
+      "fluid": "create_engineers_trial:liquid_glue_fluid"
     }
   ],
   "results": [
