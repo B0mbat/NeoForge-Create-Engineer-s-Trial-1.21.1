@@ -29,7 +29,7 @@ public class ModFluids {
             () -> ModFluids.SOURCE_MOLTEN_PLASTIC.get(),
             () -> ModFluids.FLOWING_MOLTEN_PLASTIC.get())
             .slopeFindDistance(2)
-            .levelDecreasePerBlock(1)
+            .levelDecreasePerBlock(3)
             .block(() -> ModFluids.MOLTEN_PLASTIC_BLOCK.get())
             .bucket(() -> ModFluids.MOLTEN_PLASTIC_BUCKET.get());
 
