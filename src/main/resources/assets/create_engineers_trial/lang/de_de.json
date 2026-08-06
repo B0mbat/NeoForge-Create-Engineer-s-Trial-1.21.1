@@ -15,13 +15,18 @@
   "item.create_engineers_trial.iron_nozzle": "Eisen Tülle",
   "item.create_engineers_trial.lime_plastic_sheet": "Hellgrüne Plastik Platte",
   "item.create_engineers_trial.hose": "Schlauch",
+  "item.create_engineers_trial.raw_andesite_alloy": "Rohe Andesitlegierung",
 
   "creativetab.create_engineers_trial.items": "Create: Engineer´s Trial",
 
   "item.create_engineers_trial.molten_plastic_bucket": "Geschmolzenesplastikeimer",
   "block.create_engineers_trial.molten_plastic_block": "Geschmolzenes Plastik",
   "fluid_type.create_engineers_trial.molten_plastic_fluid": "Geschmolzenes Plastik",
+  "item.create_engineers_trial.liquid_glue_bucket": "Klebereimer",
+  "block.create_engineers_trial.liquid_glue_block": "Kleber",
+  "fluid_type.create_engineers_trial.liquid_glue_fluid": "Kleber",
 
   "block.create_engineers_trial.plastic_block": "Plastik Block"
+
 
 }

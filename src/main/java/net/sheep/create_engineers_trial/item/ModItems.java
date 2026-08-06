@@ -58,6 +58,10 @@ public class ModItems {
     public static final DeferredItem<Item>  HOSE =
             ITEMS.register("hose",
                     () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item>  RAW_ANDESITE_ALLOY =
+            ITEMS.register("raw_andesite_alloy",
+                    () -> new Item(new Item.Properties()));
+
 
 
     public static void register(IEventBus eventBus) {

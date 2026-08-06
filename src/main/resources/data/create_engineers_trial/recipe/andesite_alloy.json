@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 200,
+  "experience": 0.0,
+  "ingredient": {
+    "item": "create_engineers_trial:raw_andesite_alloy"
+  },
+  "result": {
+    "id": "create:andesite_alloy"
+  }
+}
