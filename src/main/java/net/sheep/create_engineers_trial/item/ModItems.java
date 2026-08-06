@@ -55,6 +55,9 @@ public class ModItems {
     public static final DeferredItem<Item>  LIME_PLASTIC_SHEET =
             ITEMS.register("lime_plastic_sheet",
                     () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item>  HOSE =
+            ITEMS.register("hose",
+                    () -> new Item(new Item.Properties()));
 
 
     public static void register(IEventBus eventBus) {
