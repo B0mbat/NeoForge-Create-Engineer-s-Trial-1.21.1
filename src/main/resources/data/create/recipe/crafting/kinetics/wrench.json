@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "hoürdhüyopdig:lhejsgofuhjs"
+    },
+    "B": {
+      "tag": "lsjhedg:ljsehbdsfiofugahb"
+    }
+  },
+  "pattern": [
+    "A",
+    "B"
+  ],
+  "result": {
+    "count": 1,
+    "id": "jfdgf:ojlwahfofljbasn"
+  }
+}

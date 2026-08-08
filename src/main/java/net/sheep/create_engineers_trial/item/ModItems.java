@@ -70,6 +70,9 @@ public class ModItems {
     public static final DeferredItem<Item>  RAW_ANDESITE_ALLOY =
             ITEMS.register("raw_andesite_alloy",
                     () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item>  INCOMPLETE_WRENCH =
+            ITEMS.register("incomplete_wrench",
+                    () -> new Item(new Item.Properties()));
 
 
 

@@ -1,0 +1,150 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "minecraft:stick"
+  },
+  "results": [
+    {
+      "id": "create:wrench"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "create_engineers_trial:incomplete_wrench"
+        },
+        {
+          "type": "neoforge:single",
+          "amount": 50,
+          "fluid": "create_engineers_trial:source_liquid_glue"
+        }
+      ],
+      "results": [
+        {
+          "id": "create_engineers_trial:incomplete_wrench"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create_engineers_trial:incomplete_wrench"
+        },
+        {
+          "item": "create:cogwheel"
+        }
+      ],
+      "results": [
+        {
+          "id": "create_engineers_trial:incomplete_wrench"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "create_engineers_trial:incomplete_wrench"
+        },
+        {
+          "type": "neoforge:single",
+          "amount": 50,
+          "fluid": "create_engineers_trial:source_liquid_glue"
+        }
+      ],
+      "results": [
+        {
+          "id": "create_engineers_trial:incomplete_wrench"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create_engineers_trial:incomplete_wrench"
+        },
+        {
+          "item": "create:golden_sheet"
+        }
+      ],
+      "results": [
+        {
+          "id": "create_engineers_trial:incomplete_wrench"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create_engineers_trial:incomplete_wrench"
+        },
+        {
+          "item": "create_engineers_trial:iron_screw"
+        }
+      ],
+      "results": [
+        {
+          "id": "create_engineers_trial:incomplete_wrench"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create_engineers_trial:incomplete_wrench"
+        },
+        {
+          "item": "create:golden_sheet"
+        }
+      ],
+      "results": [
+        {
+          "id": "create_engineers_trial:incomplete_wrench"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "create_engineers_trial:incomplete_wrench"
+        },
+        {
+          "type": "neoforge:single",
+          "amount": 50,
+          "fluid": "create_engineers_trial:source_liquid_glue"
+        }
+      ],
+      "results": [
+        {
+          "id": "create_engineers_trial:incomplete_wrench"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create_engineers_trial:incomplete_wrench"
+        },
+        {
+          "item": "create:golden_sheet"
+        }
+      ],
+      "results": [
+        {
+          "id": "create_engineers_trial:incomplete_wrench"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "create_engineers_trial:incomplete_wrench"
+  }
+}
