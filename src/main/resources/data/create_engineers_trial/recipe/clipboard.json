@@ -1,0 +1,16 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "item": "create_engineers_trial:clipboard_without_paper"
+    },
+    {
+      "item": "create_engineers_trial:brown_paper"
+    }
+  ],
+  "results": [
+    {
+      "id": "create:clipboard"
+    }
+  ]
+}
