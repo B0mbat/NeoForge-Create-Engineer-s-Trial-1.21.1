@@ -27,24 +27,22 @@ public class ModCreativeModeTabs {
                                 output.accept(ModItems.BLUE_ELECTRON_TUBE.get());
                                 output.accept(ModItems.GREEN_ELECTRON_TUBE.get());
                                 output.accept(ModItems.EMPTY_SUPER_GLUE.get());
+                                output.accept(ModItems.IRON_NOZZLE.get());
+                                output.accept(ModItems.LIME_PLASTIC_SHEET.get());
+                                output.accept(ModFluids.LIQUID_GLUE_BUCKET.get());
                                 output.accept(ModItems.DESTROYED_PRECISION_MECHANISM.get());
                                 output.accept(ModItems.BROWN_PAPER.get());
                                 output.accept(ModItems.HALF_BROWN_PAPER.get());
                                 output.accept(ModItems.CLIPBOARD_WITHOUT_PAPER.get());
                                 output.accept(ModItems.IRON_SCREW.get());
+                                output.accept(ModItems.RAW_ANDESITE_ALLOY.get());
+                                output.accept(ModFluids.MOLTEN_PLASTIC_BUCKET.get());
+                                output.accept(ModItems.PLASTIC_SHEET.get());
+                                output.accept(ModBlocks.PLASTIC_BLOCK.get());
+                                output.accept(ModItems.HOSE.get());
                                 output.accept(ModItems.MATERIAL_SCRAP.get());
                                 output.accept(ModItems.COPPER_COIL.get());
                                 output.accept(ModItems.INCOMPLETE_UPGRADE_TEMPLATE.get());
-                                output.accept(ModItems.PLASTIC_SHEET.get());
-                                output.accept(ModItems.IRON_NOZZLE.get());
-                                output.accept(ModItems.LIME_PLASTIC_SHEET.get());
-                                output.accept(ModItems.HOSE.get());
-                                output.accept(ModItems.RAW_ANDESITE_ALLOY.get());
-
-                                output.accept(ModFluids.MOLTEN_PLASTIC_BUCKET.get());
-                                output.accept(ModFluids.LIQUID_GLUE_BUCKET.get());
-
-                                output.accept(ModBlocks.PLASTIC_BLOCK.get());
                             })
                             .build());
 
