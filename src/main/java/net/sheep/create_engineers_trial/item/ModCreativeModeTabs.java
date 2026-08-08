@@ -34,8 +34,11 @@ public class ModCreativeModeTabs {
                                 output.accept(ModItems.BROWN_PAPER.get());
                                 output.accept(ModItems.HALF_BROWN_PAPER.get());
                                 output.accept(ModItems.CLIPBOARD_WITHOUT_PAPER.get());
+                                output.accept(ModItems.COGS.get());
+                                output.accept(ModItems.LARGE_COGS.get());
                                 output.accept(ModItems.IRON_SCREW.get());
                                 output.accept(ModItems.RAW_ANDESITE_ALLOY.get());
+                                output.accept(ModItems.STICKY_SHAFT.get());
                                 output.accept(ModFluids.MOLTEN_PLASTIC_BUCKET.get());
                                 output.accept(ModItems.PLASTIC_SHEET.get());
                                 output.accept(ModBlocks.PLASTIC_BLOCK.get());
@@ -47,9 +50,6 @@ public class ModCreativeModeTabs {
                                 output.accept(ModItems.IRON_NOZZLE.get());
                                 output.accept(ModItems.LIME_PLASTIC_SHEET.get());
                                 output.accept(ModItems.HOSE.get());
-                                output.accept(ModItems.COGS.get());
-                                output.accept(ModItems.LARGE_COGS.get());
-                                output.accept(ModItems.STICKY_SHAFT.get());
 
                                 output.accept(ModFluids.MOLTEN_PLASTIC_BUCKET.get());
                                 output.accept(ModFluids.LIQUID_GLUE_BUCKET.get());
