@@ -1,0 +1,52 @@
+{
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": false,
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "minecraft:daylight_detector"
+    },
+    "P": {
+      "item": "minecraft:oak_slab"
+    },
+    "S": {
+      "item": "minecraft:oak_stairs"
+    },
+    "B": {
+      "item": "create:andesite_casing"
+    },
+    "I": {
+      "item": "create:sticky_mechanical_piston"
+    },
+    "N": {
+      "item": "minecraft:note_block"
+    },
+    "L": {
+      "item": "create:large_cogwheel"
+    },
+    "A": {
+      "item": "create:piston_extension_pole"
+    },
+    "w": {
+      "item": "create:cogwheel"
+    },
+    "O": {
+      "item": "minecraft:clock"
+    },
+    "R": {
+      "item": "create_engineers_trial:iron_screw"
+    }
+  },
+  "pattern": [
+    " CPC ",
+    "SBIBS",
+    "NLALN",
+    "NwOwN",
+    "RBLBR"
+  ],
+  "result": {
+    "count": 1,
+    "id": "create:cuckoo_clock"
+  },
+  "show_notification": false
+}

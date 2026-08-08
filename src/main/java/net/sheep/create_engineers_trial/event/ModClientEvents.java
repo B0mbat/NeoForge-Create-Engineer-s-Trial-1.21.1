@@ -27,6 +27,7 @@ public class ModClientEvents {
     public static void registerClientExtensions(RegisterClientExtensionsEvent event) {
         registerFluidClientExtensions(event, (BaseFluidType) ModFluidTypes.MOLTEN_PLASTIC_FLUID_TYPE.get());
         registerFluidClientExtensions(event, (BaseFluidType) ModFluidTypes.LIQUID_GLUE_FLUID_TYPE.get());
+        registerFluidClientExtensions(event, (BaseFluidType) ModFluidTypes.LIQUID_RUBBER_FLUID_TYPE.get());
     }
 
     private static void registerFluidClientExtensions(RegisterClientExtensionsEvent event, BaseFluidType fluidType) {

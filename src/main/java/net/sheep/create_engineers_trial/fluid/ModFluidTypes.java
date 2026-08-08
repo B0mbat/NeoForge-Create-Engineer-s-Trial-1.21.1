@@ -49,4 +49,21 @@ public class ModFluidTypes {
                     new Vector3f(0.376f, 0.784f, 0.110f)
             )
     );
+
+    public static final Supplier<FluidType> LIQUID_RUBBER_FLUID_TYPE = FLUID_TYPES.register("liquid_rubber_fluid",
+            () -> new BaseFluidType(
+                    FluidType.Properties.create()
+                            .density(2500)
+                            .viscosity(10500)
+                            .pathType(PathType.LAVA)
+                            .adjacentPathType(null)
+                            .sound(SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL_LAVA)
+                            .sound(SoundActions.BUCKET_EMPTY, SoundEvents.BUCKET_EMPTY_LAVA),
+                    ResourceLocation.fromNamespaceAndPath(CreateEngineersTrial.MOD_ID, "block/rubber_still"),
+                    ResourceLocation.fromNamespaceAndPath(CreateEngineersTrial.MOD_ID, "block/rubber_flow"),
+                    ResourceLocation.fromNamespaceAndPath(CreateEngineersTrial.MOD_ID, "block/rubber_overlay"),
+                    0xFFFFFFFF,
+                    new Vector3f(0.14f, 0.12f, 0.10f)
+            )
+    );
 }

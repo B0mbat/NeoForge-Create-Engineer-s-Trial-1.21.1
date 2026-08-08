@@ -15,8 +15,8 @@
   "item.create_engineers_trial.iron_nozzle": "Iron Nozzle",
   "item.create_engineers_trial.lime_plastic_sheet": "Lime Plastic Sheet",
   "item.create_engineers_trial.hose": "Hose",
-  "item.create_engineers_trial.cogs": "Cogs",
-  "item.create_engineers_trial.large_cogs": "Large Cogs",
+  "item.create_engineers_trial.cogs": "Gear Teeth",
+  "item.create_engineers_trial.large_cogs": "Large Gear Teeth",
   "item.create_engineers_trial.sticky_shaft": "Sticky Shaft",
   "item.create_engineers_trial.raw_andesite_alloy": "Raw Andesite Alloy",
 
@@ -28,6 +28,9 @@
   "item.create_engineers_trial.liquid_glue_bucket": "Glue Bucket",
   "block.create_engineers_trial.liquid_glue_block": "Glue",
   "fluid_type.create_engineers_trial.liquid_glue_fluid": "Glue",
+  "item.create_engineers_trial.liquid_rubber_bucket": "Liquid Rubber Bucket",
+  "block.create_engineers_trial.liquid_rubber_block": "Liquid Rubber",
+  "fluid_type.create_engineers_trial.liquid_rubber_fluid": "Rubber",
 
   "block.create_engineers_trial.plastic_block": "Plastic Block"
 }
