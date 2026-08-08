@@ -39,6 +39,9 @@ public class ModCreativeModeTabs {
                                 output.accept(ModItems.IRON_NOZZLE.get());
                                 output.accept(ModItems.LIME_PLASTIC_SHEET.get());
                                 output.accept(ModItems.HOSE.get());
+                                output.accept(ModItems.COGS.get());
+                                output.accept(ModItems.LARGE_COGS.get());
+                                output.accept(ModItems.STICKY_SHAFT.get());
 
                                 output.accept(ModFluids.MOLTEN_PLASTIC_BUCKET.get());
                                 output.accept(ModFluids.LIQUID_GLUE_BUCKET.get());

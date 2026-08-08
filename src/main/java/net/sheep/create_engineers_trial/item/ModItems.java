@@ -58,6 +58,15 @@ public class ModItems {
     public static final DeferredItem<Item>  HOSE =
             ITEMS.register("hose",
                     () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item>  COGS =
+            ITEMS.register("cogs",
+                    () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item>  LARGE_COGS =
+            ITEMS.register("large_cogs",
+                    () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item>  STICKY_SHAFT =
+            ITEMS.register("sticky_shaft",
+                    () -> new Item(new Item.Properties()));
 
 
     public static void register(IEventBus eventBus) {
