@@ -15,6 +15,9 @@
   "item.create_engineers_trial.iron_nozzle": "Iron Nozzle",
   "item.create_engineers_trial.lime_plastic_sheet": "Lime Plastic Sheet",
   "item.create_engineers_trial.hose": "Hose",
+  "item.create_engineers_trial.cogs": "Cogs",
+  "item.create_engineers_trial.large_cogs": "Large Cogs",
+  "item.create_engineers_trial.sticky_shaft": "Sticky Shaft",
   "item.create_engineers_trial.raw_andesite_alloy": "Raw Andesite Alloy",
 
   "creativetab.create_engineers_trial.items": "Create: Engineer´s Trial",
