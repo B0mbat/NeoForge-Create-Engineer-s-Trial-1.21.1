@@ -51,8 +51,10 @@ public class ModCreativeModeTabs {
                                 output.accept(ModItems.LIME_PLASTIC_SHEET.get());
                                 output.accept(ModItems.HOSE.get());
 
+
                                 output.accept(ModFluids.MOLTEN_PLASTIC_BUCKET.get());
                                 output.accept(ModFluids.LIQUID_GLUE_BUCKET.get());
+                                output.accept(ModFluids.LIQUID_RUBBER_BUCKET.get());
 
                                 output.accept(ModBlocks.PLASTIC_BLOCK.get());
                             })

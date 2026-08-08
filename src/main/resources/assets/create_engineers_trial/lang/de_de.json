@@ -29,6 +29,9 @@
   "item.create_engineers_trial.liquid_glue_bucket": "Klebereimer",
   "block.create_engineers_trial.liquid_glue_block": "Kleber",
   "fluid_type.create_engineers_trial.liquid_glue_fluid": "Kleber",
+  "item.create_engineers_trial.liquid_rubber_bucket": "Geschmolzenesgummieimer",
+  "block.create_engineers_trial.liquid_rubber_block": "Geschmolzenesgummi",
+  "fluid_type.create_engineers_trial.liquid_rubber_fluid": "Gummi",
 
   "block.create_engineers_trial.plastic_block": "Plastik Block"
 

@@ -1,0 +1,117 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "create:brass_sheet"
+  },
+  "loops": 5,
+  "results": [
+    {
+      "id": "create:precision_mechanism",
+      "chance": 0.65
+    },
+    {
+      "id": "create_engineers_trial:destroyed_precision_mechanism",
+      "chance": 0.35
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "create:incomplete_precision_mechanism"
+        }
+      ],
+      "results": [
+        {
+          "id": "create:incomplete_precision_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "create:incomplete_precision_mechanism"
+        },
+        {
+          "fluid": "create_engineers_trial:source_liquid_glue",
+          "type": "neoforge:single",
+          "amount": 25
+        }
+      ],
+      "results": [
+        {
+          "id": "create:incomplete_precision_mechanism"
+        }
+      ]
+    },
+        {
+          "type": "create:deploying",
+          "ingredients": [
+            {
+              "item": "create:incomplete_precision_mechanism"
+            },
+            {
+              "item": "create:cogwheel"
+            }
+          ],
+          "results": [
+            {
+              "id": "create:incomplete_precision_mechanism"
+            }
+          ]
+        },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create:incomplete_precision_mechanism"
+        },
+        {
+          "item": "create:belt_connector"
+        }
+      ],
+      "results": [
+        {
+          "id": "create:incomplete_precision_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create:incomplete_precision_mechanism"
+        },
+        {
+          "item": "create:cogwheel"
+        }
+      ],
+      "results": [
+        {
+          "id": "create:incomplete_precision_mechanism"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create:incomplete_precision_mechanism"
+        },
+        {
+          "item": "create_engineers_trial:iron_screw"
+        }
+      ],
+      "results": [
+        {
+          "id": "create:incomplete_precision_mechanism"
+        }
+      ]
+    }
+  ],
+  "transitional_item": {
+    "id": "create:incomplete_precision_mechanism"
+  }
+}

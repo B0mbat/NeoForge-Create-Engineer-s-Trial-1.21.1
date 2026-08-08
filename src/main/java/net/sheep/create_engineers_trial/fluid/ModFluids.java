@@ -66,6 +66,25 @@ public class ModFluids {
     public static final DeferredItem<Item> LIQUID_GLUE_BUCKET = ModItems.ITEMS.registerItem("liquid_glue_bucket",
             properties -> new BucketItem(ModFluids.SOURCE_LIQUID_GLUE.get(), properties.craftRemainder(Items.BUCKET).stacksTo(1)));
 
+    public static final BaseFlowingFluid.Properties LIQUID_RUBBER_PROPERTIES = new BaseFlowingFluid.Properties(
+            ModFluidTypes.LIQUID_RUBBER_FLUID_TYPE,
+            () -> ModFluids.SOURCE_LIQUID_RUBBER.get(),
+            () -> ModFluids.FLOWING_LIQUID_RUBBER.get())
+            .slopeFindDistance(2)
+            .levelDecreasePerBlock(1)
+            .block(() -> ModFluids.LIQUID_RUBBER_BLOCK.get())
+            .bucket(() -> ModFluids.LIQUID_RUBBER_BUCKET.get());
+
+    public static final Supplier<FlowingFluid> SOURCE_LIQUID_RUBBER = FLUIDS.register("source_liquid_rubber",
+            () -> new BaseFlowingFluid.Source(ModFluids.LIQUID_RUBBER_PROPERTIES));
+
+    public static final Supplier<FlowingFluid> FLOWING_LIQUID_RUBBER = FLUIDS.register("flowing_liquid_rubber",
+            () -> new BaseFlowingFluid.Flowing(ModFluids.LIQUID_RUBBER_PROPERTIES));
+
+    public static final DeferredBlock<LiquidBlock> LIQUID_RUBBER_BLOCK = ModBlocks.BLOCKS.register("liquid_rubber_block",
+            () -> new LiquidBlock(ModFluids.SOURCE_LIQUID_RUBBER.get(), BlockBehaviour.Properties.ofFullCopy(Blocks.WATER).noLootTable().noOcclusion()));
+    public static final DeferredItem<Item> LIQUID_RUBBER_BUCKET = ModItems.ITEMS.registerItem("liquid_rubber_bucket",
+            properties -> new BucketItem(ModFluids.SOURCE_LIQUID_RUBBER.get(), properties.craftRemainder(Items.BUCKET).stacksTo(1)));
     public static void register(IEventBus eventBus) {
         FLUIDS.register(eventBus);
     }
