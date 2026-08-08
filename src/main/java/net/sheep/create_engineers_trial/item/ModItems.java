@@ -67,6 +67,10 @@ public class ModItems {
     public static final DeferredItem<Item>  STICKY_SHAFT =
             ITEMS.register("sticky_shaft",
                     () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item>  RAW_ANDESITE_ALLOY =
+            ITEMS.register("raw_andesite_alloy",
+                    () -> new Item(new Item.Properties()));
+
 
 
     public static void register(IEventBus eventBus) {

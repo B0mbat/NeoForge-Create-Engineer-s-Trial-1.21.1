@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:andesite"
+    },
+    "B": {
+      "item": "minecraft:iron_nugget"
+    },
+    "C": {
+      "item": "create:zinc_nugget"
+    }
+  },
+  "pattern": [
+    "BA",
+    "AC"
+  ],
+  "result": {
+    "count": 1,
+    "id": "create_engineers_trial:raw_andesite_alloy"
+  }
+}
