@@ -10,13 +10,13 @@ import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 import net.sheep.create_engineers_trial.block.ModBlocks;
+import net.sheep.create_engineers_trial.datagen.DataGenerator;
 import net.sheep.create_engineers_trial.fluid.ModFluidTypes;
 import net.sheep.create_engineers_trial.fluid.ModFluids;
 import net.sheep.create_engineers_trial.item.ModCreativeModeTabs;
 import net.sheep.create_engineers_trial.item.ModItems;
-import net.sheep.create_engineers_trial.worldgen.biome.RubberForestRegion;
+import net.sheep.create_engineers_trial.worldgen.biome.ModBiomes;
 import org.slf4j.Logger;
-import terrablender.api.Regions;
 
 @Mod(CreateEngineersTrial.MOD_ID)
 public class CreateEngineersTrial {
@@ -25,7 +25,10 @@ public class CreateEngineersTrial {
     public static final Logger LOGGER = LogUtils.getLogger();
 
     public CreateEngineersTrial(IEventBus modEventBus, ModContainer modContainer) {
+
         modEventBus.addListener(this::commonSetup);
+
+        DataGenerator.register(modEventBus);
 
         ModCreativeModeTabs.register(modEventBus);
         ModItems.register(modEventBus);
@@ -35,12 +38,16 @@ public class CreateEngineersTrial {
         ModFluids.FLUIDS.register(modEventBus);
 
         NeoForge.EVENT_BUS.register(this);
-        modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+
+        modContainer.registerConfig(
+                ModConfig.Type.COMMON,
+                Config.SPEC
+        );
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
         event.enqueueWork(() -> {
-            Regions.register(new RubberForestRegion());
+            ModBiomes.registerBiomes();
         });
     }
 
