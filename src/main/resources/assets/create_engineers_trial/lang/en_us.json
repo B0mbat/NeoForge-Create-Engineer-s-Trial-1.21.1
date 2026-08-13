@@ -20,6 +20,12 @@
   "item.create_engineers_trial.sticky_shaft": "Sticky Shaft",
   "item.create_engineers_trial.raw_andesite_alloy": "Raw Andesite Alloy",
   "item.create_engineers_trial.incomplete_wrench": "Incomplete Wrench",
+  "block.create_engineers_trial.rubber_window_pane": "Rubber Window Pane",
+  "block.create_engineers_trial.rubber_planks": "Rubber Planks",
+  "block.create_engineers_trial.rubber_wood": "Rubber Wood",
+  "block.create_engineers_trial.stripped_rubber_wood": "Stripped Rubber Wood",
+  "block.create_engineers_trial.stripped_rubber_log": "Stripped Rubber Log",
+  "block.create_engineers_trial.rubber_log": "Rubber Log",
 
   "creativetab.create_engineers_trial.items": "Create: Engineer´s Trial",
 

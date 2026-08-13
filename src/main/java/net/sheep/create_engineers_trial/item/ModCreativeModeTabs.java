@@ -50,6 +50,12 @@ public class ModCreativeModeTabs {
                                 output.accept(ModItems.IRON_NOZZLE.get());
                                 output.accept(ModItems.LIME_PLASTIC_SHEET.get());
                                 output.accept(ModItems.HOSE.get());
+                                output.accept(ModBlocks.RUBBER_PLANKS.get());
+                                output.accept(ModBlocks.RUBBER_LOG.get());
+                                output.accept(ModBlocks.RUBBER_WOOD.get());
+                                output.accept(ModBlocks.RUBBER_WINDOW_PANE.get());
+                                output.accept(ModBlocks.STRIPPED_RUBBER_LOG.get());
+                                output.accept(ModBlocks.STRIPPED_RUBBER_WOOD.get());
 
 
                                 output.accept(ModFluids.MOLTEN_PLASTIC_BUCKET.get());

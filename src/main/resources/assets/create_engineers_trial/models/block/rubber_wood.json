@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "create_engineers_trial:block/rubber_log",
+    "side": "create_engineers_trial:block/rubber_log"
+  }
+}

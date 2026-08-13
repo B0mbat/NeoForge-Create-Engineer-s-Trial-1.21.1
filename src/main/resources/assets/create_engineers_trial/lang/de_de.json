@@ -20,6 +20,12 @@
   "item.create_engineers_trial.sticky_shaft": "Klebrige Welle",
   "item.create_engineers_trial.raw_andesite_alloy": "Rohe Andesitlegierung",
   "item.create_engineers_trial.incomplete_wrench": "Unfertiger Schraubenschlüssel",
+  "block.create_engineers_trial.rubber_window_pane": "Gummiholz Fensterscheibe",
+  "block.create_engineers_trial.rubber_planks": "Gummiholzbretter",
+  "block.create_engineers_trial.rubber_wood": "Gummiholz",
+  "block.create_engineers_trial.stripped_rubber_wood": "Entrindetes Gummiholz",
+  "block.create_engineers_trial.stripped_rubber_log": "Entrindeter Gummiholzstamm",
+  "block.create_engineers_trial.rubber_log": "Gummiholzstamm",
 
   "creativetab.create_engineers_trial.items": "Create: Engineer´s Trial",
 
