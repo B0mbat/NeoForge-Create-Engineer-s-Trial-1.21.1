@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "create_engineers_trial:rubber_log",
+    "create_engineers_trial:stripped_rubber_log",
+    "create_engineers_trial:rubber_wood",
+    "create_engineers_trial:stripped_rubber_wood",
+    "create_engineers_trial:liquid_rubber_bucket",
+    "create_engineers_trial:source_liquid_rubber"
+  ]
+}

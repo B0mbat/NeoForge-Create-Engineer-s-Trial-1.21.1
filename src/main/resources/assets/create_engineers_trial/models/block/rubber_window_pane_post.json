@@ -1,0 +1,8 @@
+{
+  "parent": "create:block/connected_glass_pane/post",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "edge": "create_engineers_trial:block/rubber_planks",
+    "pane": "create_engineers_trial:block/rubber_window"
+  }
+}
