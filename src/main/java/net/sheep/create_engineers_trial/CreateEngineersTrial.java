@@ -14,7 +14,9 @@ import net.sheep.create_engineers_trial.fluid.ModFluidTypes;
 import net.sheep.create_engineers_trial.fluid.ModFluids;
 import net.sheep.create_engineers_trial.item.ModCreativeModeTabs;
 import net.sheep.create_engineers_trial.item.ModItems;
+import net.sheep.create_engineers_trial.worldgen.biome.RubberForestRegion;
 import org.slf4j.Logger;
+import terrablender.api.Regions;
 
 @Mod(CreateEngineersTrial.MOD_ID)
 public class CreateEngineersTrial {
@@ -34,15 +36,13 @@ public class CreateEngineersTrial {
 
         NeoForge.EVENT_BUS.register(this);
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
-
-
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
-
+        event.enqueueWork(() -> {
+            Regions.register(new RubberForestRegion());
+        });
     }
-
-
 
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) {
