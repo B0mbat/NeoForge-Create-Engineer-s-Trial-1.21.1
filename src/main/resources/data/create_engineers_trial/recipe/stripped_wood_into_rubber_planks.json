@@ -1,0 +1,15 @@
+{
+  "type": "create:cutting",
+  "ingredients": [
+    {
+      "item": "create_engineers_trial:stripped_rubber_wood"
+    }
+  ],
+  "processing_time": 20,
+  "results": [
+    {
+      "id": "create_engineers_trial:rubber_planks",
+      "count": 6
+    }
+  ]
+}

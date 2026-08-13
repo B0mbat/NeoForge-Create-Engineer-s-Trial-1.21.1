@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "create_engineers_trial:plastic_block",
+    "create_engineers_trial:source_molten_plastic",
+    "create_engineers_trial:molten_plastic_bucket",
+    "create_engineers_trial:plastic_sheet",
+    "create_engineers_trial:lime_plastic_sheet"
+  ]
+}
